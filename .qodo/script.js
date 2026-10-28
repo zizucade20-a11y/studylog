@@ -3,5 +3,9 @@ function loadsessions(){
     if (saved === null) {
         return []
     }
+    function saveSessions(sessions) {
+        localStorage.setItem("studyLog-session", JSON.stringify(sessions))
+    }
+
     
 }
