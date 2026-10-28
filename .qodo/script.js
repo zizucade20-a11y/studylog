@@ -20,7 +20,11 @@ function loadsessions(){
                 date: document.getElementById("date").value,
                 note: document.gegElementById("note").value
             };
-        })
+
+            const sessions = loadSessions();
+            sessions.push(session);
+            saveSessions(sessions);
+        });
     }
 
 
