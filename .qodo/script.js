@@ -29,3 +29,18 @@ function loadsessions(){
 
 
 }
+
+const tatalMinutes = document.getElementById("total-minutes");
+const sessionCount = document.getElementById("session-count");
+
+if (totalMinutes !== null) {
+    const sessions = loadSessions();
+    let total = 0;
+
+    for (const session of sessions) {
+        total = total + session.minutes;
+    }
+
+    totalMinutes.textContent = total;
+    sessionCount.textContent = sessions.length;
+}
