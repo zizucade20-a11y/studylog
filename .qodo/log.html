@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studylog-log a session</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="cream">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="log.html">Log session</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <hi>Log a study session</hi>
+
+    <form id="session-form">
+        <label for="subject">Subject</label>
+        <select id="subject">
+            <option value="math">Math</option>
+            <option value="english">English</option>
+            <option value="bio">Bio</option>
+            <option value="chem">Chem</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="minutes">Minutes studied</label>
+        <input type="number" id="minutes" min="1" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <label for="note">Note (optional)</label>
+        <textarea id="note"></textarea>
+
+        <button type="submit">Sve session </button>
+    </form>
+    
+</body>
+</html>
