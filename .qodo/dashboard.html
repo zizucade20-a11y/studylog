@@ -17,11 +17,26 @@
 
     <section id="stats">
         <div>
-           <p>Total minutes</p>
-           <p id="session-count">0</p>
+            <p>Total minutes</p>
+            <p id="total-minutes">0</p>
+        </div>
+        <div>
+            <p>Sessions</p>
+            <p id="session-count">0</p>
         </div>
     </section>
-
+     <h2>Recent sessions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Subject</th>
+                <th>Minutes</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody id="sessions-body"></tbody>
+    </table>
     <script src="script.js"></script>
     
 </body>
